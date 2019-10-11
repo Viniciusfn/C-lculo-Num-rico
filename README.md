@@ -1,2 +1,2 @@
-# C-lculo-Num-rico
+# Cálculo-Numérico
 Programas de métodos numéricos em geral
