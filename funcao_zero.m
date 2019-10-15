@@ -1,0 +1,1 @@
+x = fzero('funcao', 0)
