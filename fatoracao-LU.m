@@ -28,7 +28,7 @@ for posPivo = 1:1:tam
 endfor
 
 #L.Y = B
-Y = zeros(0,tam);
+Y = zeros(1,tam);
 
 for i = 1:1:tam
 	Y(i) = B(i,1);
@@ -41,7 +41,7 @@ fprintf("Matriz Y:\n");
 Y
 
 #U.X = Y
-X = zeros(0,tam);
+X = zeros(1,tam);
 
 for i = tam:-1:1 
   X(i) = Y(i);
