@@ -1,7 +1,6 @@
-A = [15 -3 5; 10 21 6; 3 -3 12];
-B = [17; 35; 15];
-tol = 0.001;
-#resposta: X = 0.894 0.886 1.248
+A = [78 -15 -13 -7; 17 68 -16 4; 19 -17 95 20; 15 -14 -16 79];
+B = [70 -60 55 50];
+tol = 0.002;
 
 t = size(A);
 if (t(1) != t(2))
@@ -28,9 +27,10 @@ while(flag)
 
 	flag = 0;
 	for i = 1:1:tam
+    fprintf("dif X%d = %f\n", i, abs((X(i) - x_ant(i)) /X(i)));
 		if(abs((X(i) - x_ant(i)) /X(i)) > tol)
 			flag = 1;
-			break
+			#break
 		endif
 	endfor
 endwhile

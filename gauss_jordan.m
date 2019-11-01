@@ -1,5 +1,5 @@
-A = [12 -2 3; 7 15 -4; 3 3 12];
-B = [10; 18; 15];
+A = [107 -21 17 13; 21 110 10 20; 16 17 74 8; -19 8 17 90];
+B = [0;0;0;0];
 
 t = size(A);
 if(t(1)!=t(2))
@@ -25,6 +25,8 @@ for posPivo = 1:1:tam
       B(lin,1) = B(lin,1) - mult*B(posPivo,1);
     endif
   endfor
+  A
+  Inv
 endfor
 
 for lin = 1:1:tam

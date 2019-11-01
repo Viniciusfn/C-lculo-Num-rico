@@ -1,5 +1,5 @@
-A = [21 -7 6; 3 12 5; -5 6 17];
-B = [19; 20; 21];
+A = [96 -21 -15 9; -17 77 7 14; 10 18 68 -6; 0 10 -25 56];
+B = [35; 40; 30; 33];
 
 t = size(A);
 if(t(1)!=t(2))
@@ -20,7 +20,7 @@ for posPivo = 1:1:tam
 
   for lin = (posPivo+1):1:tam
     mult = U(lin,posPivo)/pivo;
-	L(lin, posPivo) = mult;
+	  L(lin, posPivo) = mult;
     for col = posPivo:1:tam
       U(lin,col) = U(lin,col) - mult*(U(posPivo,col));
     endfor
