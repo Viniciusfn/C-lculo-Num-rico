@@ -20,7 +20,7 @@ while(flag)
 		X(i) = B(i)/A(i,i);
 		for j = 1:1:tam
 			if(j != i)
-				X(i) = X(i) - (A(i,j) / A(i,i)) * x_ant(j);
+				X(i) = X(i) - (A(i,j) / A(i,i)) * X(j);
 			endif
 		endfor
 	endfor
